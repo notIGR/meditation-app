@@ -1,5 +1,9 @@
 video {
-
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+z-index: -5;
 }
 * {
   margin: 0;
@@ -42,6 +46,26 @@ pointer-events: none;
   bottom: 10%;
   color: ghostwhite;
   font-size: 50px;
-
 }
 
+.time-select button,
+.sound-picker button {
+  color: ghostwhite;
+  width: 30%;
+  height: 10%;
+  background: none;
+  border: 2px solid ghostwhite;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.time-select button:hover {
+  color: black;
+  background: ghostwhite;
+}
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+}
