@@ -68,4 +68,15 @@ pointer-events: none;
   border: none;
   height: 120px;
   width: 120px;
+  border-radius: 50%;
+  padding: 30px;
+}
+.sound-picker button:nth-child(1) {
+background:blue;
+}
+.sound-picker button:nth-child(2) {
+  background: red;
+}
+.sound-picker button img{
+  height: 100%;
 }
