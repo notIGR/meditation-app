@@ -1,5 +1,5 @@
 video {
-  display: none;
+
 }
 * {
   margin: 0;
@@ -25,19 +25,23 @@ video {
   align-items: center;
 }
 
-.time-select {
-background: blue;
-}
-
-.sound-picker {
-background: green;
-}
 
 .player-container svg {
   position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%, -50%);
+pointer-events: none;
 }
 .player-container {
   position: relative;
-background: coral;
+}
+.time-display {
+  position: absolute;
+  bottom: 10%;
+  color: ghostwhite;
+  font-size: 50px;
+
 }
 
