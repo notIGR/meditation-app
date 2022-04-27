@@ -20,6 +20,8 @@ const app = () => {
   play.addEventListener("click", () => {
     checkPlaying(song);
   });
+  
+  //
 
   //create function for start stop
   const checkPlaying = (song) => {
@@ -38,6 +40,12 @@ const app = () => {
     let elapses = fakeDuration - currentTime;
     let seconds = Math.floor(elapses % 60);
     let minutes = Math.floor(elapses / 60);
+
+    //aniumate circle
+    let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
+    outline.style.strokeDashoffset = progress;
+    //animate text
+    timeDisplay.textContent = `${minutes}:${seconds}`;
   };
 };
 
