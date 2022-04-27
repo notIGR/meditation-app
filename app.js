@@ -9,7 +9,17 @@ const sounds = document.querySelectorAll('.sound-picker button');
 const timeDisplay = document.querySelector('.time-display');
 //get length of outline
 const outlineLength = outline.getTotalLength();
-console.log(outlineLength)
+console.log(outlineLength) //1359.759765625
+//duration
+let fakeDuration = 600;
+
+outline.style.strokeDasharray = outlineLength;
+outline.style.strokeDashoffset = outlineLength;
+
+//play sounds
+play.addEventListener('click', () =>{
+    song.play();
+});
 }
 
 app();
